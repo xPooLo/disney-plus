@@ -4,21 +4,42 @@ import { useSelector } from "react-redux";
 import { selectNewDisney } from "../features/movie/movieSlice";
 
 const NewDisney = (props) => {
-  const movies = useSelector(selectNewDisney);
-
   return (
     <Container>
       <h4>New to Disney+</h4>
       <Content>
-        {movies &&
-          movies.map((movie, key) => (
-            <Wrap key={key}>
-              {movie.id}
-              <Link to={`/detail/` + movie.id}>
-                <img src={movie.cardImg} alt={movie.title} />
-              </Link>
-            </Wrap>
-          ))}
+        <Wrap>
+          <Link>
+            <img
+              src="https://variety.com/wp-content/uploads/2014/04/01-avengers-2012.jpg?w=1024"
+              alt=""
+            />
+          </Link>
+        </Wrap>
+        <Wrap>
+          <Link>
+            <img
+              src="https://www.timecodesystems.com/wp-content/uploads/2013/07/Avengers2HDThumb.jpg"
+              alt=""
+            />
+          </Link>
+        </Wrap>
+        <Wrap>
+          <Link>
+            <img
+              src="https://www.onmsft.com/wp-content/uploads/2018/04/infinitywar.jpg"
+              alt=""
+            />
+          </Link>
+        </Wrap>
+        <Wrap>
+          <Link>
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3b1c5f8f-1cad-49ab-a42d-2465f4941bef/df7z6yu-37d5904b-4e69-4c41-b781-5cd4db7213e3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNiMWM1ZjhmLTFjYWQtNDlhYi1hNDJkLTI0NjVmNDk0MWJlZlwvZGY3ejZ5dS0zN2Q1OTA0Yi00ZTY5LTRjNDEtYjc4MS01Y2Q0ZGI3MjEzZTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XQdNY04oN-7D2Fz4mwqu6msPHzqzhDx2ntY-xdYxV88"
+              alt=""
+            />
+          </Link>
+        </Wrap>
       </Content>
     </Container>
   );

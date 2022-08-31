@@ -11,15 +11,35 @@ const Recommends = (props) => {
     <Container>
       <h4>Recommended for You</h4>
       <Content>
-        {movies &&
-          movies.map((movie, key) => (
-            <Wrap key={key}>
-              {movie.id}
-              <Link to={`/detail/` + movie.id}>
-                <img src={movie.cardImg} alt={movie.title} />
-              </Link>
-            </Wrap>
-          ))}
+        <Wrap>
+          <Link>
+            <img src="/images/moana.png" alt="" />
+          </Link>
+        </Wrap>
+        <Wrap>
+          <Link>
+            <img
+              src="https://images6.alphacoders.com/101/thumb-1920-1012489.jpg"
+              alt=""
+            />
+          </Link>
+        </Wrap>
+        <Wrap>
+          <Link>
+            <img
+              src="https://tiredmummyoftwo.co.uk/wp-content/uploads/2017/09/Cars_3_thumbnail.jpg"
+              alt=""
+            />
+          </Link>
+        </Wrap>
+        <Wrap>
+          <Link>
+            <img
+              src="https://1.bp.blogspot.com/-FR5ggE_sEbc/YNNXgoUXl8I/AAAAAAAAI0o/pQ-HG2Xf-zAAK9o1er8kYCbg08anlYrKACPcBGAsYHg/w919/luca-2021-animated-movie-4k-uhdpaper.com-760.0_a-thumbnail.jpg"
+              alt=""
+            />
+          </Link>
+        </Wrap>
       </Content>
     </Container>
   );

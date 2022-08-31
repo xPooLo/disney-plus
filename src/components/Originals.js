@@ -10,15 +10,35 @@ const Originals = (props) => {
     <Container>
       <h4>Originals</h4>
       <Content>
-        {movies &&
-          movies.map((movie, key) => (
-            <Wrap key={key}>
-              {movie.id}
-              <Link to={`/detail/` + movie.id}>
-                <img src={movie.cardImg} alt={movie.title} />
-              </Link>
-            </Wrap>
-          ))}
+        <Wrap>
+          <Link>
+            <img
+              src="https://1.bp.blogspot.com/-2pDBF5rwbdE/X2xNeBZT5HI/AAAAAAAADCA/TSFTMiG7P8kO2QcneDOBq0rSauGCV3dPwCNcBGAsYHQ/w919/the-mandalorian-season-2-poster-uhdpaper.com-4K-5.2849-wp.thumbnail.jpg"
+              alt=""
+            />
+          </Link>
+        </Wrap>
+        <Wrap>
+          <Link>
+            <img
+              src="https://1.bp.blogspot.com/-sxhIng5jv6s/XZb1CbgHd7I/AAAAAAAAOzM/1LyhHHdqXe8OzYUoE8ZRJx4kmrcz5XRDACLcBGAsYHQ/w919/frozen-2-poster-elsa-anna-characters-uhdpaper.com-4K-7.83-wp.thumbnail.jpg"
+              alt=""
+            />
+          </Link>
+        </Wrap>
+        <Wrap>
+          <Link>
+            <img
+              src="https://whatsondisneyplus.com/wp-content/uploads/2022/08/avatar.jpg"
+              alt=""
+            />
+          </Link>
+        </Wrap>
+        <Wrap>
+          <Link>
+            <img src="https://wallpaperaccess.com/full/4971210.jpg" alt="" />
+          </Link>
+        </Wrap>
       </Content>
     </Container>
   );
